@@ -103,7 +103,7 @@ case $(uname -m) in
 esac
 
 echo "search $name_service"
-file=$(curl -s https://api.github.com/repos/intrahouseio/$repo_name/releases/latest | grep browser_download_url | cut -d '"' -f 4)
+file=$(curl -s https://api.github.com/repos/fast0490f/$repo_name/releases/latest | grep browser_download_url | cut -d '"' -f 4)
 echo -e "latest found: \033[0;32m $file \033[0m"
 
 echo -e "\033[0m"
