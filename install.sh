@@ -19,6 +19,12 @@ port=8088
 root=/opt/$name_service
 project_path=/var/lib/$name_service/projects/$project_name
 
+case "$1" in
+  "ru")   lang=$1;;
+  "en")   lang=$1;;
+     *)   lang="en";;
+esac
+
 #-------------- end
 
 #-------------- logo
@@ -27,11 +33,11 @@ echo -e "\033[0;34m"
 cat <<\EOF
    ______          __                   __  __
   /\__  _\        /\ \__               /\ \/\ \
-  \/_/\ \/    ___\ \ ,_\  _ __    __  \ \ \_\ \    ___   __  __    ____     __
-    \ \ \   /' _ `\ \ \/ /\`'__\/'__`\ \ \  _  \  / __`\/\ \/\ \  /',__\  /'__`\
-     \_\ \__/\ \/\ \ \ \_\ \ \//\ \L\.\_\ \ \ \ \/\ \L\ \ \ \_\ \/\__, `\/\  __/
-     /\_____\ \_\ \_\ \__\\ \_\\ \__/.\_\\ \_\ \_\ \____/\ \____/\/\____/\ \____\
-     \/_____/\/_/\/_/\/__/ \/_/ \/__/\/_/ \/_/\/_/\/___/  \/___/  \/___/  \/____/
+  \/_/\ \/     ___\ \ ,_\  _ __    __  \ \ \_\ \    ___   __  __    ____     __
+     \ \ \   /' _ `\ \ \/ /\`'__\/'__`\ \ \  _  \  / __`\/\ \/\ \  /',__\  /'__`\
+      \_\ \__/\ \/\ \ \ \_\ \ \//\ \L\.\_\ \ \ \ \/\ \L\ \ \ \_\ \/\__, `\/\  __/
+      /\_____\ \_\ \_\ \__\\ \_\\ \__/.\_\\ \_\ \_\ \____/\ \____/\/\____/\ \____\
+      \/_____/\/_/\/_/\/__/ \/_/ \/__/\/_/ \/_/\/_/\/___/  \/___/  \/___/  \/____/
 
                           Software for Automation Systems
 
@@ -49,15 +55,15 @@ mkdir -p $root
 function getLinuxUrl {
   check=$(apt-get 2> /dev/null || echo "false" )
   if [[ $check != "false" ]]; then
-      url="https://raw.githubusercontent.com/intrahouseio/intraHouse-Cherry/master/install_linux_deb.sh"
+      url="https://raw.githubusercontentfast0490f/intraHouse-Cherry/master/install_linux_deb.sh"
   else
-      url="https://raw.githubusercontent.com/intrahouseio/intraHouse-Cherry/master/install_linux_red.sh"
+      url="https://raw.githubusercontentfast0490f/intraHouse-Cherry/master/install_linux_red.sh"
   fi
 }
 
 case "$OSTYPE" in
   solaris*) echo -e "\033[0;33m Error:\033[0;31m Installation is not supported\033[0;35m $OSTYPE!" && exit ;; #SOLARIS
-  darwin*)  url="https://raw.githubusercontent.com/intrahouseio/intraHouse-Cherry/master/install_darwin.sh" ;; #OSX
+  darwin*)  url="https://raw.githubusercontentfast0490f/intraHouse-Cherry/master/install_darwin.sh" ;; #OSX
   linux*)   getLinuxUrl ;; #LINUX
   bsd*)     echo -e "\033[0;33m Error:\033[0;31m Installation is not supported\033[0;35m $OSTYPE!" && exit ;; #BSD
   msys*)    echo -e "\033[0;33m Error:\033[0;31m Installation is not supported\033[0;35m $OSTYPE!" && exit ;; #WINDOWS

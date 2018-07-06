@@ -26,12 +26,12 @@
 
 ## Support, feedback, news
 
-Stay in touch with us via form [issues](https://github.com/intrahouseio/Doc/issues) or email support@intrahouse.eu.
+Stay in touch with us via form [issues](https://githubfast0490f/Doc/issues) or email support@intrahouse.eu.
 
 If you found a bug in [IntraHouse](http://www.intrahouse.eu/en/) system or
 [plugins](http://www.intrahouse.eu/en/plugins/), please look at
-[issues](https://github.com/intrahouseio/Doc/issues). We probably know and are fixing it already. If we don't, it's better to report the bug there. There you can also leave your wishes and suggestions.
+[issues](https://githubfast0490f/Doc/issues). We probably know and are fixing it already. If we don't, it's better to report the bug there. There you can also leave your wishes and suggestions.
 
 You can follow the news by
-[releases](https://github.com/intrahouseio/Doc/releases) or
-[milestones](https://github.com/intrahouseio/Doc/milestones) in this repository.
+[releases](https://githubfast0490f/Doc/releases) or
+[milestones](https://githubfast0490f/Doc/milestones) in this repository.
