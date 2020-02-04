@@ -45,3 +45,5 @@
 За новостями вы можете следить по
 [релизам](https://githubfast0490f/Doc/releases) или
 [milestones](https://githubfast0490f/Doc/milestones) в этом репозитории.
+
+test
